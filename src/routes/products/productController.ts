@@ -10,7 +10,7 @@ function getProductById(req: Request, res: Response) {
 }
 
 function createProduct(req: Request, res: Response) {
-  res.send("Create a product" + " " + req.body);
+  res.send("Create a product" + " " + (req.body ?? 'NA'));
 }
 
 function updateProductById(req: Request, res: Response) {
