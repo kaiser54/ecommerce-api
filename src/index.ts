@@ -5,6 +5,7 @@ const port = 3000
 
 const app = express();
 
+// this must be about the router middleware
 app.use(json());
 app.use(urlencoded({ extended: true }));
 
